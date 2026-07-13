@@ -8,7 +8,7 @@ function calcularMedia(botao) {
     const colunaMedia = linha.querySelector(".media");
     colunaMedia.textContent = media.toFixed(2);
 
-    //operador ternario variavel = condicao ? se true =      : se false =      ;
+    //operador if ternario variavel = condicao ? se true =      : se false =      ;
     //const status = media  >= 7 ? "Aprovado" : "Reprovado";
     let badge = "";
     if (media >= 7){
