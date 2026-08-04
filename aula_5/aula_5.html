@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="container">
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProduto">
+      <button type="button" class="btn btn-primary" onclick="modalNovoProduto()">
   Novo Produto
 </button>
 
@@ -37,7 +37,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        
+          <input type="hidden" name="id" id="id">
           <div class="mb-3">
             <label for="nome" class="form-label">Produto</label>
             <input type="text" name="nome" id="nome" class="form-control">   
@@ -56,7 +56,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" onclick="criarProduto()">Salvar Produto</button>
+        <button type="button" class="btn btn-primary" onclick="salvarProduto()">Salvar Produto</button>
       </div>
     </div>
   </div>
